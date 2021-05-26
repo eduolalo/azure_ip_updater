@@ -37,14 +37,16 @@ Para revisar que se instaló bien, puedes ejecutar el comando:
 
 ```
 $ ls $GOBIN | grep azure
+azure_ip_updater
 ```
 
 Listo! te debe de responder con un _azure_ip_updater_
 
 ## Ayuda
 
-Puedes ejecutar el comando ```$ azure_ip_updater -h```:
+Puedes ejecutar el comando:
 ```
+$ azure_ip_updater -h
 Usage of azure_ip_updater:
   -g string
     	Grupo de recursos en el que está el servidor SQL
