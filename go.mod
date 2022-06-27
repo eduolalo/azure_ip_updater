@@ -1,3 +1,3 @@
 module azure_ip_updater
 
-go 1.16
+go 1.18

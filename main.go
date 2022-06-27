@@ -44,7 +44,14 @@ func main() {
 
 	out, err := cmd.Output()
 	if err != nil {
+
+		if err.Error() == "exit status 1" {
+
+			log.Println("revisa que estés logueado, ejecuta:az login")
+			return
+		}
 		log.Printf("Error: %s \n", err)
+		return
 	}
 
 	log.Printf("Out: %s", out)
